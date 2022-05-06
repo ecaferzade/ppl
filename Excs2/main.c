@@ -1,4 +1,5 @@
-// ADD .h FILES !!!!!
+#include "regDefs.h"
+#include <SPIv1.h>
 
 
 int main(int argc, char *argv[]){
