@@ -1,3 +1,6 @@
+#include "regDefs.h"
+#include <SPIv1.h>
+
 REG_TYPE RegSettings[MAX_REG] =
 {
     {IOCFG3         , 0x06 }, // GPIO3 IO Pin Configuration
