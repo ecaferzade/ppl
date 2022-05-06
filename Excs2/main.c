@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]){
+    
     // first initialize
     if(spi_init()){
         printf("ERROR: Initialization failed\n");
@@ -13,8 +14,8 @@ int main(int argc, char *argv[]){
 
     // do some register reading or writing, 
     // performance commands and get status information
-    // reset CC1200
-    cc1200_cmd(SRES);
+    
+    cc1200_cmd(SRES);  // reset CC1200
     sleep(1);
     writeAllRegisters();
     cc1200_cmd(SRX);
