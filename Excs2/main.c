@@ -17,15 +17,18 @@ int main(int argc, char *argv[]){
   writeAllRegisters();
   cc1200_cmd(SRX);
 	
-  int packet_len = 0;
-  int expect_packet_len = 10;
-  char a;
+	while(1){
 	
-  while(packet_len <= expect_packet_len){
-    cc1200_reg_read(NUM_RXBYTES, &packet_len);
-  }
+	  int packet_len = 0;
+	  int expect_packet_len = 10;
+	  char a;
 
-	
-  for(int i = 0; i < packet_len; i++){
-    printf("The packet is: %c", cc1200_reg_read(0x3F, &a)); 
-  }
+	  while(packet_len <= expect_packet_len){
+	    cc1200_reg_read(NUM_RXBYTES, &packet_len);
+	  }
+
+
+	  for(int i = 0; i < packet_len; i++){
+	    printf("The packet is: %c", cc1200_reg_read(0x3F, &a)); 
+	  }
+	}
