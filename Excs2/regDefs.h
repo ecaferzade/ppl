@@ -183,3 +183,5 @@ typedef struct {
 
 #define MAX_REG  47
 #define MAX_EXT_REG  130
+
+void writeAllRegisters();
