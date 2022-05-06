@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+c96cf6dc4cbb6ecaff10b8fa2fdc6763 CMakeFiles/pru
+60dc5569aec7477faaf5b5cd24b8945a SPIv1_bin.h

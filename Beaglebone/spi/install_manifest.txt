@@ -1,0 +1,2 @@
+/usr/local/lib/libspi.so
+/usr/local/include/SPIv1.h

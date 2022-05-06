@@ -1,0 +1,8 @@
+/home/debian/Beaglebone/spi/CMakeFiles/install/strip.dir
+/home/debian/Beaglebone/spi/CMakeFiles/spi.dir
+/home/debian/Beaglebone/spi/CMakeFiles/rebuild_cache.dir
+/home/debian/Beaglebone/spi/CMakeFiles/list_install_components.dir
+/home/debian/Beaglebone/spi/CMakeFiles/install/local.dir
+/home/debian/Beaglebone/spi/CMakeFiles/pru.dir
+/home/debian/Beaglebone/spi/CMakeFiles/edit_cache.dir
+/home/debian/Beaglebone/spi/CMakeFiles/install.dir

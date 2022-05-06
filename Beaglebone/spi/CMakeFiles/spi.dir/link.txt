@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -Wall -I/usr/local/include -std=c99 -D_XOPEN_SOURCE=500 -O2 -mtune=cortex-a8 -march=armv7-a  -shared -Wl,-soname,libspi.so -o libspi.so CMakeFiles/spi.dir/SPIv1.c.o 

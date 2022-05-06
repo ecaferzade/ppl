@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/debian/Beaglebone/spi/SPIv1.c
+stdio.h
+-
+stdlib.h
+-
+sys/mman.h
+-
+fcntl.h
+-
+errno.h
+-
+signal.h
+-
+prussdrv.h
+-
+pruss_intc_mapping.h
+-
+unistd.h
+-
+string.h
+-
+time.h
+-
+sys/time.h
+-
+SPIv1.h
+/home/debian/Beaglebone/spi/SPIv1.h
+SPIv1_bin.h
+/home/debian/Beaglebone/spi/SPIv1_bin.h
+
+/home/debian/Beaglebone/spi/SPIv1.h
+
+/home/debian/Beaglebone/spi/SPIv1_bin.h
+
