@@ -22,7 +22,6 @@ int main(int argc, char *argv[]){
     while(1){
         int packet_len = 0;
 	int expect_packet_len = 10;  //in bytes
-	char a;
 
 	while(packet_len <= expect_packet_len){
 	    /* From the datasheet: "The NUM_RXBYTES register can be polled at a given rate to get
@@ -30,8 +29,9 @@ information about the number of bytes in the RX FIFO."
 	    */
 	    cc1200_reg_read(NUM_RXBYTES, &packet_len);
 	}
-
+	
+	printf("The packet is: ")
 	for(int i = 0; i < packet_len; i++){
-	    printf("The packet is: %c", cc1200_reg_read(0x3F, &a));
+	    printf("%d", cc1200_reg_read(0x3F, NULL));
 	}
     }
