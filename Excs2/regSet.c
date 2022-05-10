@@ -1,3 +1,6 @@
+#include "regDefs.h"
+#include <SPIv1.h>
+
 REG_TYPE RegSettings[MAX_REG] =
 {
     {IOCFG3         , 0x06 }, // GPIO3 IO Pin Configuration
@@ -182,3 +185,14 @@ REG_TYPE ExtRegSettings[MAX_EXT_REG] =
     {FIFO_NUM_RXBYTES, 0x00 },  //:RX FIFO Status
     {RXFIFO_PRE_BUF  , 0x00 }  // RX FIFO Status
 };
+
+void writeAllRegisters(){
+	for(int i = 0; i < MAX_REG; i++){
+		cc1200_reg_write(RegSettings[i].adr, RegSettings[i].val);
+
+	}
+	for(int i = 0; i < MAX_EXT_REG; i++){
+		cc1200_reg_write(ExtRegSettings[i].adr, ExtRegSettings[i].val);
+	}
+}
+

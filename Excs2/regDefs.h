@@ -1,3 +1,5 @@
+#pragma once
+
 #define  IOCFG3             0x00 
 #define  IOCFG2             0x01 
 #define  IOCFG1             0x02 
@@ -183,3 +185,5 @@ typedef struct {
 
 #define MAX_REG  47
 #define MAX_EXT_REG  130
+
+void writeAllRegisters();
