@@ -49,7 +49,7 @@ REG_TYPE RegSettings[MAX_REG] =
     {PA_CFG1        , 0x7f }, // Power Amplifier Configuration Reg. 1
     {PA_CFG0        , 0x56 }, // Power Amplifier Configuration Reg. 0
     {ASK_CFG        , 0x0f }, // ASK Configuration
-    {PKT_LEN        , 0xff }  // Packet Length Configuration
+    {PKT_LEN        , 0x0a }  // Packet Length Configuration
 };
 
 REG_TYPE ExtRegSettings[MAX_EXT_REG] =
