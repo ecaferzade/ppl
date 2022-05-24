@@ -48,4 +48,20 @@ information about the number of bytes in the RX FIFO."
 	for(int i = 0; i < packet_len; i++){
 	    printf("%c", (char) cc1200_reg_read(0x3F, NULL));
 	}
+    /*
+    while(packet_len < expect_packet_len){ // once packet_len=10 go to next stage
+
+	cc1200_reg_read(NUM_RXBYTES, &packet_len);
+    }
+
+
+int bytes=10; // Specify packet size
+char c[bytes]; // Create a char array of packet size
+
+
+for(int i = 0; i < packet_len; i++){ //Fill up char array by popping from memory
+c[i]=cc1200_reg_read(0x3F, NULL);
+}
+    
+    */
 }
