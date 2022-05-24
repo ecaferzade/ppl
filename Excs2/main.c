@@ -37,7 +37,7 @@ int main(int argc, char *argv[]){
     printf("checkpoint 5\n");
     printf("while schleife erreicht.");
     fflush(stdout);
-    while(packet_len <= expect_packet_len){
+    while(packet_len < expect_packet_len){
 	    /* From the datasheet: "The NUM_RXBYTES register can be polled at a given rate to get
 information about the number of bytes in the RX FIFO."
 	    */
